@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Property in USA Predictor</title>
+</head>
+<body>
+
+    <h1>Property in USA Predictor</h1>
+    {% if result %}
+        <p>{{ result }}</p>
+    {% endif %}
+    <form method="post" action="/predict">
+        <label>bedrooms</label><br>
+        <input type="text" name="bedrooms"><br><br>
+
+        <label>bathrooms</label><br>
+        <input type="text" name="bathrooms"><br><br>
+
+        <label>price</label><br>
+        <input type="text" name="price"><br><br>
+
+        <input type="submit" value="Predict"><br><br>
+    </form>
+
+</body>
+</html>
